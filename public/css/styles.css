@@ -1,0 +1,161 @@
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#teachers {
+	text-align: center;
+}
+#modalIvo {
+    text-align: left;
+    font-size: 12px;
+}
+#modalLozan {
+    text-align: left;
+    font-size: 12px;
+}
+#modalRosen {
+    text-align: left;
+    font-size: 12px;
+}
+#teachers img {
+	margin: 0 0 20px;
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+    padding-top: 70px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+
+}
+.map_frame{
+    width: 100%;
+    height: 200px;
+    frameborder: 0;
+    border: solid;
+}
+
+.navbar {
+	/*background: url('../../images/nav-bar.jpg') top center no-repeat;*/
+
+}
+
+/**/
+
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	padding: 13px 15px;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.well {
+	margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+	margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+
+#map_canvas {
+    display: block;
+    height: 400px;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+	.thumbnail .price {
+		font-size: 14px;
+	}
+
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+
+
+
+
+}
+
+
+
