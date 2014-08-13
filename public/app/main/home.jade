@@ -17,6 +17,8 @@
                 .row
                     .col-sm-6
                         .thumbnail
+                            .caption
+                                h3.text-center Курс за коктейл-барман - класическо барманство
                             //img(src="../../images/item_psd2html5.jpg", alt="PSD to HTML5 & CSS3")
                             carousel(interval="myInterval")
                                 slide(ng-repeat="slide in slides", active="slide.active")
@@ -24,17 +26,19 @@
                                     carousel-caption
                                         h4 {{slide.textHeader}}
                                         p {{slide.textContent}}
+                                        p {{slide.textContent}}
                             .label.label-success.price
                                 span.glyphicon.glyphicon-tag
-                                span 400
+                                span 350
                                 sup лв
                             .caption
-                                h3 Курс за коктейл-барман - класическо барманство
                                 p
                                     a.btn.btn-primary.btn-small(href="/contact") Запиши се
                                     a.btn.btn-link.btn-small(href="/cocktaibarman") Научи повече
                     .col-sm-6
                         .thumbnail
+                            .caption
+                                h3.text-center Курс за барман "Майсторски клас"
                             .bs-example
                                 .embed-responsive.embed-responsive-16by9
                                     iframe.embed-responsive-item(src="http://www.youtube.com/embed/4oS2Q3_mngo", allowfullscreen)
@@ -42,8 +46,6 @@
                                 span.glyphicon.glyphicon-tag
                                 span Freе
                             .caption
-                                h3 Курс за барман "Майсторски клас"
-                                p Learn how to take a PSD and turn it into a beautiful, hand-coded HTML5 &amp; CSS3 website with this web design crash course.
                                 p
                                     a.btn.btn-primary.btn-small(href="/contact") Запиши се
                                     a.btn.btn-link.btn-small(href="") Научи повече
