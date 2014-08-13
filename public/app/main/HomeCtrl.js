@@ -9,7 +9,7 @@ app.controller('HomeCtrl',function($scope){
     ]
     $scope.myInterval = 2000;
     $scope.slides = [
-        {image:'../../images/carousel_large_01.jpg',textHeader:'Школа за бармани "БАР МЕНИДЖЪР"', textContent:'Във Варна, София и Велико Търново отвори врати едно дългоочаквано място'},
+        {image:'../../images/carousel_large_01.jpg',textHeader:'Школа за бармани "БАР МЕНИДЖЪР"', textContent:'.'},
         {image: '../../images/carousel_large_02.jpg',textHeader:'second cocktail',textContent: '.'},
         {image: '../../images/carousel_large_03.jpg', textHeader:'third cocktail', textContent: '.'}
     ];

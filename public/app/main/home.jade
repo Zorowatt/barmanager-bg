@@ -1,10 +1,10 @@
 .container
-    carousel(interval="myInterval")
-        slide(ng-repeat="slide in slides", active="slide.active")
-            img(ng-src="{{slide.image}}", style="margin:auto")
-            carousel-caption
-                h4 {{slide.textHeader}}
-                p {{slide.textContent}}
+    //carousel(interval="myInterval")
+    //    slide(ng-repeat="slide in slides", active="slide.active")
+    //        img(ng-src="{{slide.image}}", style="margin:auto")
+    //        carousel-caption
+    //            h4 {{slide.textHeader}}
+    //            p {{slide.textContent}}
     hr
     .jumbotron
         //h3 Във Варна, София и Велико Търново отвори врати едно дългоочаквано място
@@ -17,17 +17,22 @@
                 .row
                     .col-sm-6
                         .thumbnail
-                            img(src="../../images/item_psd2html5.jpg", alt="PSD to HTML5 & CSS3")
+                            //img(src="../../images/item_psd2html5.jpg", alt="PSD to HTML5 & CSS3")
+                            carousel(interval="myInterval")
+                                slide(ng-repeat="slide in slides", active="slide.active")
+                                    img(ng-src="{{slide.image}}", style="margin:auto")
+                                    carousel-caption
+                                        h4 {{slide.textHeader}}
+                                        p {{slide.textContent}}
                             .label.label-success.price
                                 span.glyphicon.glyphicon-tag
                                 span 400
                                 sup лв
                             .caption
                                 h3 Курс за коктейл-барман - класическо барманство
-                                p Learn how to take a PSD and turn it into a beautiful, hand-coded HTML5 &amp; CSS3 website with this web design crash course.
                                 p
                                     a.btn.btn-primary.btn-small(href="/contact") Запиши се
-                                    a.btn.btn-link.btn-small(href="") Научи повече
+                                    a.btn.btn-link.btn-small(href="/cocktaibarman") Научи повече
                     .col-sm-6
                         .thumbnail
                             .bs-example

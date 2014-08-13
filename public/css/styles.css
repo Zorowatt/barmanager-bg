@@ -2,6 +2,34 @@
    Layout
    -------------------------------------- */
 
+body {
+    /*font-family: 'Poiret One', cursive;*/
+    /*font-family: 'Neucha', cursive;*/
+    /*font-family: 'Tenor Sans', sans-serif;*/
+    /*font-family: 'Anonymous Pro';*/
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+
+
+
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #teachers {
 	text-align: center;
 }

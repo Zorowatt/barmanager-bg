@@ -1,0 +1,11 @@
+.modal-header
+    button.close(ng-click="cancel()") &times;
+    h3.modal-title Ивайло Рангелов
+.modal-body
+    ul
+        li(ng-repeat="t in teachers | filter: 'Ивайло Рангелов'") {{t.concurse}}
+        hr
+    h4 Към момента Ивайло Рангелов е член на Контролния съвет в Българска Асоциация на Барманите и собственик на коктейл-барове "The Garden Bar" гр.Варна, "Тики Бар" гр.София.
+.modal-footer
+    button.btn.btn-warning(ng-click="cancel()") Ok
+

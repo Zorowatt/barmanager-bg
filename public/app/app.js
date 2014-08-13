@@ -21,7 +21,7 @@ app.config(function($locationProvider, $routeProvider) {
             //controller: 'HomeCtrl'
         })
         .when('/teachers', {
-            templateUrl: 'partials/main/teachers',
+            templateUrl: 'partials/teachers/teachers',
             controller: 'TeachersCtrl'
         })
         .when('/addresses', {
@@ -32,18 +32,27 @@ app.config(function($locationProvider, $routeProvider) {
             templateUrl: 'partials/main/contact'
             //controller: 'TeachersCtrl'
         })
-        .otherwise ({
-        redirectTo: '/'
-        });
+        .when('/cocktaibarman', {
+            templateUrl: 'partials/main/cocktaibarman'
+            //controller: 'TeachersCtrl'
+        })
+//        .otherwise ({
+//        redirectTo: '/'
+//        });
 
 
 
 });
 
-//app.run(function($rootScope, $location){
+app.run(function($rootScope, $location){
 //    $rootScope.$on('$routeChangeError', function(event, current, previous, rejection){
 //        if (rejection === 'non authorized'){
 //            $location.path('/');
 //        }
 //    })
-//});
+    $rootScope.$on('$viewContentLoaded',function(){
+        jQuery('html, body').animate({ scrollTop: 0 }, 200);
+    });
+
+
+});

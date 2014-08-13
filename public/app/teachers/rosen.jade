@@ -1,0 +1,10 @@
+.modal-header
+    button.close(ng-click="cancel()") &times;
+    h3.modal-title Росен Михайлов
+.modal-body
+    ul
+        li(ng-repeat="t in teachers | filter: 'Росен Михайлов'") {{t.concurse}}
+        hr
+    h4 Към момента Росен Михайлов е член на Контролния съвет в Българска Асоциация на Барманите, управител на "Playground" THE MALL SOFIA  и бранд амбасадор на "МОНИН".
+.modal-footer
+    button.btn.btn-warning(ng-click="cancel()") Ok
