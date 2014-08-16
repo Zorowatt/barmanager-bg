@@ -8,7 +8,7 @@ body {
     /*font-family: 'Tenor Sans', sans-serif;*/
     /*font-family: 'Anonymous Pro';*/
     /*font-family: 'Open Sans Condensed', sans-serif;*/
-
+    background-color: #6E7F80;
 
 
 
@@ -17,7 +17,10 @@ body {
     line-height: 1.42857143;
     color: #333;
 }
-
+#ullist
+{
+    list-style-type: none;
+}
 
 
 

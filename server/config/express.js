@@ -6,6 +6,10 @@ var express = require('express'),
     passport = require('passport');
 
 module.exports = function(app, config){
+
+    // This is to prevent hacker attack or at least to make their job more difficult
+    app.disable('x-powered-by');
+    
     app.set('view engine','jade');
     app.set('views', config.rootPath + '/server/views');
   //  app.use(cookieParser());

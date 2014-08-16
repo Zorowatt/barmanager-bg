@@ -1,5 +1,11 @@
 var app = angular.module('app',['ngResource','ngRoute','ui.bootstrap']);
 
+
+// Closes the Responsive Menu on Menu Item Click
+$('.skrii').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+
 app.config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
 
@@ -44,6 +50,8 @@ app.config(function($locationProvider, $routeProvider) {
 
 });
 
+
+// navigate to top of the page after select from menu
 app.run(function($rootScope, $location){
 //    $rootScope.$on('$routeChangeError', function(event, current, previous, rejection){
 //        if (rejection === 'non authorized'){
@@ -51,7 +59,7 @@ app.run(function($rootScope, $location){
 //        }
 //    })
     $rootScope.$on('$viewContentLoaded',function(){
-        jQuery('html, body').animate({ scrollTop: 0 }, 200);
+        $('html, body').animate({ scrollTop: 0 }, 200);
     });
 
 

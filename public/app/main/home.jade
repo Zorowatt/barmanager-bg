@@ -1,15 +1,12 @@
 .container
-    //carousel(interval="myInterval")
-    //    slide(ng-repeat="slide in slides", active="slide.active")
-    //        img(ng-src="{{slide.image}}", style="margin:auto")
-    //        carousel-caption
-    //            h4 {{slide.textHeader}}
-    //            p {{slide.textContent}}
-    hr
     .jumbotron
         //h3 Във Варна, София и Велико Търново отвори врати едно дългоочаквано място
         //h3 школа за бармани "БАР МЕНИДЖЪР"
         h4 Независимо от Вашата възраст, опит и квалификация в школи "Бар Мениджър" имате възможност да участвате в различни видове обучения. Вие избирате кое е подходящо за Вас. А ако не можете да определите - ние с удоволствие ще Ви помогнем в избора, предвид индивидуалните Ви качества и потребности.
+    p От бармана зависят славата и успехът на заведението. Той трябва да притежава високи теоретични знания и практически умения, за да приготви коктейл с отлични, добре балансирани вкусови качества, с хармония в цвета и аранжировката. Не само вкусът на коктейла, но и  външният вид, както и атрактивния начин на приготвяне са особено приятни за окото и привличат нови клиенти. Важен фактор също е и умението за общуване с клиентите. Всичко това се постига разбира се с много опит, който обаче се гради на добра основа. Тази основа се опитваме да поставим и ние - школи за бармани "Бар Мениджър".
+
+
+
     h3 Представяме Ви 4 типа обучения:
     .row
         .col-sm-12
@@ -32,6 +29,7 @@
                                 span 350
                                 sup лв
                             .caption
+                                h4 Научете основите на барманството
                                 p
                                     a.btn.btn-primary.btn-small(href="/contact") Запиши се
                                     a.btn.btn-link.btn-small(href="/cocktaibarman") Научи повече
@@ -46,6 +44,47 @@
                                 span.glyphicon.glyphicon-tag
                                 span Freе
                             .caption
+                                h4 Научете повече от това което знаете
+                                p
+                                    a.btn.btn-primary.btn-small(href="/contact") Запиши се
+                                    a.btn.btn-link.btn-small(href="") Научи повече
+    .row
+        .col-sm-12
+            .thumbnails
+                .row
+                    .col-sm-6
+                        .thumbnail
+                            .caption
+                                h3.text-center Курс флеар - фюжън
+                            //img(src="../../images/item_psd2html5.jpg", alt="PSD to HTML5 & CSS3")
+                            carousel(interval="myInterval")
+                                slide(ng-repeat="slide in slides", active="slide.active")
+                                    img(ng-src="{{slide.image}}", style="margin:auto")
+                                    carousel-caption
+                                        h4 {{slide.textHeader}}
+                                        p {{slide.textContent}}
+                                        p {{slide.textContent}}
+                            .label.label-success.price
+                                span.glyphicon.glyphicon-tag
+                                span 350
+                                sup лв
+                            .caption
+                                h4 Научете основите на барманството
+                                p
+                                    a.btn.btn-primary.btn-small(href="/contact") Запиши се
+                                    a.btn.btn-link.btn-small(href="/cocktaibarman") Научи повече
+                    .col-sm-6
+                        .thumbnail
+                            .caption
+                                h3.text-center Курс за барман "Майсторски клас"
+                            .bs-example
+                                .embed-responsive.embed-responsive-16by9
+                                    iframe.embed-responsive-item(src="http://www.youtube.com/embed/4oS2Q3_mngo", allowfullscreen)
+                            .label.label-info.price
+                                span.glyphicon.glyphicon-tag
+                                span Freе
+                            .caption
+                                h4 Научете повече от това което знаете
                                 p
                                     a.btn.btn-primary.btn-small(href="/contact") Запиши се
                                     a.btn.btn-link.btn-small(href="") Научи повече
